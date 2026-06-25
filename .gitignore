@@ -24,6 +24,7 @@ dist-ssr
 *.sw?
 
 # Design reference (local only)
+design-images/
 design-reference.html
 design-style.css
 design-script.js
