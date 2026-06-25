@@ -4,12 +4,6 @@ export default function TermsPage() {
   return (
     <article className="legal-page section-padding">
       <div className="container legal-container">
-        <nav className="legal-breadcrumb" aria-label="Fil d'Ariane">
-          <Link to="/">Accueil</Link>
-          <span aria-hidden="true">/</span>
-          <span>Termes et conditions</span>
-        </nav>
-
         <header className="legal-header">
           <h1 className="legal-title">Termes et conditions</h1>
           <p className="legal-updated">

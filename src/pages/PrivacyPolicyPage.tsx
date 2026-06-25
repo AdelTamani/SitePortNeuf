@@ -1,15 +1,7 @@
-import { Link } from 'react-router-dom'
-
 export default function PrivacyPolicyPage() {
   return (
     <article className="legal-page section-padding">
       <div className="container legal-container">
-        <nav className="legal-breadcrumb" aria-label="Fil d'Ariane">
-          <Link to="/">Accueil</Link>
-          <span aria-hidden="true">/</span>
-          <span>Politique de confidentialité</span>
-        </nav>
-
         <header className="legal-header">
           <h1 className="legal-title">Politique de confidentialité</h1>
           <p className="legal-updated">
