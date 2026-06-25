@@ -1,6 +1,6 @@
 /* ============================================================
    DOMAINE DU GRAND-PORTNEUF â Nouveau design page d'accueil
-   Palette : Blanc crÃ¨me #FAF8F5 | Noir profond #0F0F0F
+   Palette : Lin grège #E9E5DE | Noir profond #0F0F0F
              Vert forÃªt #2D4A35 | Or chaud #C8A96E | Gris #6B6B6B
    ============================================================ */
 
@@ -8,13 +8,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --cream:    #FAF8F5;
+  --cream:    #E9E5DE;
   --dark:     #0F0F0F;
   --forest:   #2D4A35;
   --gold:     #C8A96E;
   --gold-lt:  #E8D5A8;
   --gray:     #6B6B6B;
-  --gray-lt:  #E8E5E0;
+  --gray-lt:  #DFDBD3;
   --white:    #FFFFFF;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'Montserrat', Arial, sans-serif;

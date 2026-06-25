@@ -101,7 +101,7 @@ Palette et typographie définies dans `src/index.css` :
 
 | Token | Valeur | Usage |
 |-------|--------|-------|
-| `--cream` | `#FAF8F5` | Fond principal |
+| `--cream` | `#E9E5DE` | Fond principal |
 | `--dark` | `#0F0F0F` | Texte, sections sombres |
 | `--forest` | `#2D4A35` | Boutons, accents verts |
 | `--gold` | `#C8A96E` | Labels, survols |
