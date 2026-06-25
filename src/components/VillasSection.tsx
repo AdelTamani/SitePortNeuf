@@ -23,7 +23,12 @@ export default function VillasSection() {
               <div className="villa-info">
                 <h3>{villa.name}</h3>
                 <p>{villa.description}</p>
-                <a href="#contact" className="btn btn-sm btn-primary">
+                <a
+                  href={villa.bookingUrl}
+                  className="btn btn-sm btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Réserver
                 </a>
               </div>
