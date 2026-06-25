@@ -25,6 +25,8 @@
 
 html { scroll-behavior: smooth; font-size: 16px; }
 
+[id] { scroll-margin-top: 90px; }
+
 body {
   font-family: var(--font-sans);
   background: var(--cream);
@@ -911,5 +913,109 @@ ul { list-style: none; }
   .container { padding: 0 1.2rem; }
   .hero-content { padding: 0 1.2rem; }
   .contact-form { padding: 1.5rem; }
+}
+
+/* ============================================================
+   LEGAL PAGES
+   ============================================================ */
+.legal-page {
+  padding-top: 8rem;
+  background: var(--cream);
+}
+
+.legal-container {
+  max-width: 800px;
+}
+
+.legal-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.legal-breadcrumb a {
+  color: var(--forest);
+  transition: color var(--transition);
+}
+
+.legal-breadcrumb a:hover {
+  color: var(--gold);
+}
+
+.legal-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-lt);
+}
+
+.legal-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.legal-updated {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.legal-content h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin: 2.5rem 0 1rem;
+}
+
+.legal-content h3 {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--forest);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.legal-content p {
+  font-size: 0.95rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.legal-content a {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+
+.legal-content a:hover {
+  color: var(--gold);
+}
+
+.legal-contact-list {
+  margin: 1rem 0 1.5rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.legal-contact-list li {
+  font-size: 0.95rem;
+  color: var(--gray);
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+.legal-contact-list a {
+  color: var(--forest);
 }
 

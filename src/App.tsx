@@ -1,29 +1,20 @@
+import { Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import UrgencyBanner from './components/UrgencyBanner'
-import AboutSection from './components/AboutSection'
-import VillasSection from './components/VillasSection'
-import ExperiencesSection from './components/ExperiencesSection'
-import ForfaitsSection from './components/ForfaitsSection'
-import InvestSection from './components/InvestSection'
-import MediaSection from './components/MediaSection'
-import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import HomePage from './pages/HomePage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
+import TermsPage from './pages/TermsPage'
 
 function App() {
   return (
     <>
       <Header />
       <main>
-        <Hero />
-        <UrgencyBanner />
-        <AboutSection />
-        <VillasSection />
-        <ExperiencesSection />
-        <ForfaitsSection />
-        <InvestSection />
-        <MediaSection />
-        <ContactSection />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/politique-de-confidentialite" element={<PrivacyPolicyPage />} />
+          <Route path="/termes-et-conditions" element={<TermsPage />} />
+        </Routes>
       </main>
       <Footer />
     </>

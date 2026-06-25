@@ -1,12 +1,23 @@
+import { Link } from 'react-router-dom'
+import { useSectionNavigation } from '../hooks/useSectionNavigation'
+import type { MouseEvent } from 'react'
+
 const footerLinks = [
-  { href: '#accueil', label: 'Accueil' },
-  { href: '#forfaits', label: 'Forfaits' },
-  { href: '#activites', label: 'Activités' },
-  { href: '#investissement', label: 'Investissement' },
-  { href: '#contact', label: 'Contact' },
+  { id: 'accueil', label: 'Accueil' },
+  { id: 'forfaits', label: 'Forfaits' },
+  { id: 'activites', label: 'Activités' },
+  { id: 'investissement', label: 'Investissement' },
+  { id: 'contact', label: 'Contact' },
 ]
 
 export default function Footer() {
+  const { goToSection } = useSectionNavigation()
+
+  const handleSectionClick = (e: MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault()
+    goToSection(sectionId)
+  }
+
   return (
     <footer className="site-footer">
       <div className="container footer-inner">
@@ -20,15 +31,15 @@ export default function Footer() {
         </div>
         <nav className="footer-nav">
           {footerLinks.map((link) => (
-            <a key={link.href} href={link.href}>
+            <a key={link.id} href={`/#${link.id}`} onClick={(e) => handleSectionClick(e, link.id)}>
               {link.label}
             </a>
           ))}
         </nav>
         <div className="footer-legal">
           <p>&copy; 2026 Domaine du Grand-Portneuf. Tous droits réservés.</p>
-          <a href="#">Politique de confidentialité</a>
-          <a href="#">Termes et conditions</a>
+          <Link to="/politique-de-confidentialite">Politique de confidentialité</Link>
+          <Link to="/termes-et-conditions">Termes et conditions</Link>
         </div>
       </div>
     </footer>
