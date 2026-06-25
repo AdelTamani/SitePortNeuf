@@ -554,7 +554,7 @@ ul { list-style: none; }
 .exp-card {
   position: relative;
   height: 380px;
-  border-radius: var(--radius);
+  border-radius: 28px 28px var(--radius) var(--radius);
   overflow: hidden;
   background-size: cover;
   background-position: center;
