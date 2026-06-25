@@ -809,6 +809,13 @@ ul { list-style: none; }
   border-color: var(--forest);
 }
 
+.form-success {
+  font-size: 0.85rem;
+  color: var(--forest);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
 /* ============================================================
    FOOTER
    ============================================================ */
