@@ -37,6 +37,13 @@ export default function ContactSection() {
               </div>
             </div>
             <div className="contact-item">
+              <span className="contact-icon">✉️</span>
+              <div>
+                <strong>Courriel</strong>
+                <a href="mailto:info@domainedugrandportneuf.com">info@domainedugrandportneuf.com</a>
+              </div>
+            </div>
+            <div className="contact-item">
               <span className="contact-icon">📍</span>
               <div>
                 <strong>Adresse</strong>
