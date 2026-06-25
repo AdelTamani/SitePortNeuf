@@ -487,6 +487,9 @@ ul { list-style: none; }
 }
 
 .villa-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: #1a1a1a;
   border-radius: 28px 28px var(--radius) var(--radius);
   overflow: hidden;
@@ -525,6 +528,9 @@ ul { list-style: none; }
 }
 
 .villa-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 1.5rem;
 }
 .villa-info h3 {
@@ -537,8 +543,17 @@ ul { list-style: none; }
 .villa-info p {
   font-size: 0.82rem;
   color: rgba(255,255,255,0.6);
-  margin-bottom: 1.2rem;
+  margin-bottom: 0;
   line-height: 1.6;
+}
+.villa-info .btn {
+  margin-top: auto;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.4rem;
+  line-height: 1;
 }
 
 /* ============================================================
